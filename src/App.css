@@ -1,0 +1,78 @@
+.App {
+  font-family: sans-serif;
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100%;
+}
+.border {
+  border: 1px solid grey;
+  border-radius: 4px;
+  background-color: rgb(205, 230, 251);
+}
+
+input {
+  border-radius: 3px;
+  border: 1px solid grey;
+  margin: 4px;
+  padding: 2px 6px;
+  font-size: 0.8rem;
+  background-color: hsla(180, 100%, 50%, 0.2);
+  width: 85%;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+}
+
+input[type="number"] {
+  -moz-appearance: textfield;
+}
+input:focus {
+  outline: none;
+  border: 1px solid rgb(0, 8, 255);
+}
+
+.input-wrapper {
+  padding: 1rem;
+}
+
+button {
+  border: 0;
+  margin: 4px;
+  border-radius: 4px;
+  color: white;
+  background-color: red;
+  font-size: 0.8rem;
+  padding: 4px 8px;
+  cursor: pointer;
+  font-weight: 600;
+  font-family: system-ui;
+}
+
+button:hover {
+  background-color: green;
+}
+
+h3 {
+  color: #800000d9;
+  margin: 6px;
+  font-weight: 500;
+}
+h5 {
+  color: rgb(67 63 245);
+  margin: 6px;
+  font-weight: 500;
+}
+
+div {
+  text-align: center;
+}
+
+.main-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}

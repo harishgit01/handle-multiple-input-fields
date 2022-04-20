@@ -1,6 +1,5 @@
 import React from "react";
 const Input = React.forwardRef(({ arr, inputData, setInputData }, ref) => {
-  console.log("inputData", inputData);
   const handleInputChange = (e) => {
     const { name, value } = e.target;
     setInputData({
@@ -14,7 +13,7 @@ const Input = React.forwardRef(({ arr, inputData, setInputData }, ref) => {
   }
 
   return (
-    <div>
+    <>
       {array.map((item, i) => (
         <div key={i}>
           <input
@@ -26,7 +25,7 @@ const Input = React.forwardRef(({ arr, inputData, setInputData }, ref) => {
           />
         </div>
       ))}
-    </div>
+    </>
   );
 });
 export default Input;
